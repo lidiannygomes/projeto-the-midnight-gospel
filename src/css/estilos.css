@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main:after{
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3076923076923077) 11%, rgba(0,0,0,0.04245448179271705) 25%, rgba(0,0,0,0.038461538461538436) 60%, rgba(0,0,0,0.30995475113122173) 100%);
+    z-index: -1;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes .logo {
+    max-width: 350px;
+    margin-bottom: 80px;
+    filter: invert(1);
+}
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.menu-lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-lateral .icone {
+    width: 30px;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+}
+
+.menu-lateral .icone:hover {
+    transform: scale(1.2)
+}
+
+.logo {
+    animation: pulse;
+    transition: 1.0s ease-in-out;
+}
+
+.conteudo .logo:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350%;
+    z-index: -1;
+}
+
+.conteudo .descricao:hover {
+    transform: scale(1.1);
+}
+
+.conteudo .descricao {
+    animation: pulse;
+    transition: 1.0s ease-in-out;
+}
+
+.botao-main {
+    background-color: transparent;
+    justify-content: baseline;
+}
+
+:root {
+    --cor-primaria-botao: #CD0000
+}
+
+:root {
+    --cor-secundaria-botao: #8B0000
+}
+
+.botao-main .botao {
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botao {
+    background-color: var(--cor-primaria-botao);
+    outline: none;
+    color: rgb(216, 198, 198);
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao:hover {
+    background-color: var(--cor-secundaria-botao)
+}
+
+.botao:active {
+    color: black;
+    background-color: var(--cor-secundaria-botao);
+}
